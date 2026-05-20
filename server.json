@@ -1,13 +1,11 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.aistudioworkspaceapproval/aistudioworkspaceapproval-mcp",
-  "description": "AI Studio Workspace Approval Gate is a hosted remote MCP for AI Studio Workspace approval gate MCP.",
+  "title": "AI Studio Workspace Approval Gate MCP",
+  "description": "Paid remote MCP for AI Studio Workspace approval gate MCP, structured receipts, audit logs, and reviewer-ready evidence.",
   "version": "1.0.0",
-  "website_url": "https://aistudioworkspaceapproval.clauxel.com/",
-  "repository": {
-    "url": "https://github.com/clauxel/ai-studio-workspace-approval-gate-mcp",
-    "source": "github"
-  },
+  "websiteUrl": "https://aistudioworkspaceapproval.clauxel.com/",
+  "documentationUrl": "https://github.com/clauxel/ai-studio-workspace-approval-gate-mcp",
+  "serverCardUrl": "https://aistudioworkspaceapproval.clauxel.com/server-card.json",
   "remotes": [
     {
       "type": "streamable-http",
@@ -15,17 +13,15 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website.",
-          "is_required": true,
-          "is_secret": true
+          "description": "Bearer token from the product website."
         }
       ]
     }
   ],
-  "_meta": {
-    "io.modelcontextprotocol.registry/publisher-provided": {
-      "title": "AI Studio Workspace Approval Gate MCP",
-      "server_card_url": "https://aistudioworkspaceapproval.clauxel.com/server-card.json"
-    }
-  }
+  "tags": [
+    "studio",
+    "workspace",
+    "approval",
+    "remote-mcp"
+  ]
 }
