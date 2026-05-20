@@ -1,15 +1,12 @@
-# AI Studio Workspace Approval Gate
+# AI Studio Workspace Approval Gate MCP
 
-AI Studio Workspace Approval Gate is a hosted remote MCP for AI Studio Workspace approval gate MCP.
+Paid remote MCP for AI Studio Workspace approval gate MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
 Website: https://aistudioworkspaceapproval.clauxel.com/
-Docs pattern reference: https://github.com/clauxel/MiroFish
-Primary keyword: AI Studio Workspace approval gate MCP
-Type: MCP
-Default plan: team
 MCP endpoint: https://aistudioworkspaceapproval.clauxel.com/mcp
 Server card: https://aistudioworkspaceapproval.clauxel.com/server-card.json
-Registry name: com.clauxel.aistudioworkspaceapproval/aistudioworkspaceapproval-mcp
-Tools: check_workspace_change, approve_model_run, estimate_ai_studio_spend, issue_workspace_receipt, export_workspace_audit
+Docs: https://github.com/clauxel/ai-studio-workspace-approval-gate-mcp
 
-Public boundary: docs-only repository; no production source code or secrets.
+Use case: AI Studio Workspace approval gate MCP with structured receipts.
+Authentication: Bearer token required for production use.
+Tools: check_workspace_change, approve_model_run, estimate_ai_studio_spend, issue_workspace_receipt, export_workspace_audit
