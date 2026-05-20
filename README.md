@@ -1,49 +1,48 @@
-# AI Studio Workspace Approval Gate
+# AI Studio Workspace Approval Gate MCP
 
-AI Studio Workspace Approval Gate is a hosted remote MCP for AI Studio Workspace approval gate MCP.
+AI Studio Workspace approval gate MCP with structured receipts.
 
-This repository is a public documentation project for AI Studio Workspace Approval Gate. Its structure follows the public documentation pattern used by [MiroFish](https://github.com/clauxel/MiroFish): a short front door, a clear reading order, practical guides, reference pages, and a public-safe boundary.
+Paid remote MCP for AI Studio Workspace approval gate MCP, structured receipts, audit logs, and reviewer-ready evidence.
 
-## Start Here
+## Public Endpoints
 
-- Website: https://aistudioworkspaceapproval.clauxel.com/?utm_source=github&utm_medium=documentation&utm_campaign=aistudioworkspaceapproval_public_docs&utm_content=readme_home
-- Pricing: https://aistudioworkspaceapproval.clauxel.com/pricing/?utm_source=github&utm_medium=documentation&utm_campaign=aistudioworkspaceapproval_public_docs&utm_content=readme_pricing
-- Checkout: https://aistudioworkspaceapproval.clauxel.com/checkout/?utm_source=github&utm_medium=documentation&utm_campaign=aistudioworkspaceapproval_public_docs&utm_content=readme_checkout
-- Support: support@aigeamy.com
-
-## Remote MCP
-
-- Endpoint: https://aistudioworkspaceapproval.clauxel.com/mcp
+- Website: https://aistudioworkspaceapproval.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
+- MCP endpoint: https://aistudioworkspaceapproval.clauxel.com/mcp
 - Server card: https://aistudioworkspaceapproval.clauxel.com/server-card.json
 - Registry name: `com.clauxel.aistudioworkspaceapproval/aistudioworkspaceapproval-mcp`
-- Tools: `check_workspace_change`, `approve_model_run`, `estimate_ai_studio_spend`, `issue_workspace_receipt`, `export_workspace_audit`
 
-## Reading Order
+## Access
 
-1. [Quickstart](guide/quickstart.md)
-2. [Evaluation guide](guide/evaluation.md)
-3. [Checkout and pricing](guide/checkout-and-pricing.md)
-4. [Workflow notes](features/workflow.md)
-5. [Security model](features/security-model.md)
-6. [Public link reference](reference/links.md)
+This is a paid hosted remote MCP. Production calls require a bearer token issued from the product website.
 
-## Audience
+```http
+Authorization: Bearer <token>
+```
 
-AI product teams, operations leads, workflow owners, and technical evaluators.
+Unauthenticated browser visits to `/mcp` return a clear JSON error instead of internal details.
 
-## Capabilities
+## Tools
 
-- Streamable HTTP MCP endpoint
-- Bearer-token access for production calls
-- Structured tool-call output
-- Receipt-oriented evidence export
-- Public server card and registry metadata
-- MCP tool: check_workspace_change
-- MCP tool: approve_model_run
-- MCP tool: estimate_ai_studio_spend
-- MCP tool: issue_workspace_receipt
-- MCP tool: export_workspace_audit
+- `check_workspace_change`
+- `approve_model_run`
+- `estimate_ai_studio_spend`
+- `issue_workspace_receipt`
+- `export_workspace_audit`
 
-## Public-Safe Boundary
+## Quick Start
 
-This repository contains documentation only. It does not contain production source code, credentials, payment configuration, Cloudflare configuration, customer records, private analytics, or local machine paths.
+1. Open the website and choose a plan.
+2. Create or request an API token.
+3. Add the endpoint to an MCP client that supports Streamable HTTP remote servers.
+4. Send JSON-RPC requests with the bearer token.
+
+## Useful Links
+
+- Product page: https://aistudioworkspaceapproval.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605
+- Pricing: https://aistudioworkspaceapproval.clauxel.com/?utm_source=github&utm_medium=directory&utm_campaign=sbl202605#pricing
+- Server card: https://aistudioworkspaceapproval.clauxel.com/server-card.json
+- MCP endpoint: https://aistudioworkspaceapproval.clauxel.com/mcp
+
+## Status
+
+This repository is a public documentation and directory-submission reference for the hosted service. It does not contain the private production source code.
